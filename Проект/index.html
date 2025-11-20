@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="menu-item" href="#main">Главная</a>
+        <a class="menu-item" href="#about">Обо мне</a>
+        <a class="menu-item" href="#achivments">Достижения</a>
+        <a class="menu-item" href="#contact">Контакты</a>
+      </nav>
+      <div class="mobile-block">
+        <h1>Сайт Константин</h1>
+        <img class="menu-icon" src="images/menu.svg" alt="Menu Icon" />
+      </div>
+    </header>
+
+    <main>
+      <section id="main">
+        <div class="main-text">
+          <h1 class="header">Портфолио Константина</h1>
+          <p class="text">
+            Привет! Я Константин — ученик 10 програмистского Лицея №1533. Имею опыт работы с С#, Python, HTML и CSS.
+          </p>
+          <div class="skills-tags">
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">Python</span>
+            <span class="tag">C#</span>
+          </div>
+        </div>
+        <img
+          class="avatar"
+          src="https://avatars.mds.yandex.net/i?id=10b84569b8e20a242ecb1c6d96cf17c57491a326-2994189-images-thumbs&n=13"
+          alt="Фото Константина"
+        />
+      </section>
+
+      <section id="about" style="position: relative">
+        <div class="about-content">
+          <h1>Обо мне</h1>
+          <div class="about-wrapper">
+            <img
+              class="avatar about-avatar"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+              alt="Фото Константина"
+            />
+            <div class="about-text">
+              <p class="about-paragraph">
+                Меня зовут Константин, и я ученик, практикующий программирование проектов на C#, Python, и HTML/CSS.
+              </p>
+              <p class="about-paragraph">
+                Моя специализация включает создание адаптивных интерфейсов,
+                работу с современными фреймворками и библиотеками, а также
+                оптимизацию производительности приложений. Я ценю чистый
+                код, слежу за актуальными трендами в разработке и всегда открыт
+                к новым вызовам.
+              </p>
+              <p class="about-paragraph">
+                В свободное время я изучаю новые технологии, участвую в
+                IT-сообществах и помогаю другим разработчикам расти
+                профессионально.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="achivments">
+        <h1>Мои достижения</h1>
+        <div class="achivments-container">
+          <div class="achivment-card">
+            <div class="achivment-icon">🎓</div>
+            <h3>Образование</h3>
+            <p>
+              Успешно закончил 9 классов Лицея №1533 с отличием, участвовал в олимпиадах, успешно сдал ОГЭ.
+            </p>
+          </div>
+          <div class="achivment-card">
+            <div class="achivment-icon">💼</div>
+            <h3>Профессиональная деятельность</h3>
+            <p>
+              Работаю над крупным проектом с целью его дальнейшего развития и монетизации.
+            </p>
+          </div>
+          <div class="achivment-card">
+            <div class="achivment-icon">🚀</div>
+            <h3>Профессиональный рост</h3>
+            <p>
+              Постоянно совершенствую навыки, изучаю новые технологии и
+              инструменты. Активно развиваюсь как fullstack-разработчик.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1>Свяжитесь со мной</h1>
+        <p class="contact-description">
+          Есть проект, который хотите реализовать? Или просто хотите обсудить
+          возможности сотрудничества? Заполните форму ниже, и я обязательно с
+          вами свяжусь!
+        </p>
+        <form>
+          <label for="name">Ваше имя</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Введите ваше имя"
+          />
+
+          <label for="age">Ваш возраст</label>
+          <input
+            id="age"
+            name="age"
+            type="number"
+            placeholder="Введите ваш возраст"
+          />
+
+          <label for="email">Ваш e-mail</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="example@mail.ru"
+          />
+
+          <label for="message">Ваше сообщение</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Опишите ваш проект или задайте вопрос..."
+          ></textarea>
+        </form>
+        <button id="button" class="form-btn" onclick="sendForm()">Отправить сообщение</button>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="tel:+79165555555">📞 +7 (916) 555-55-55</a>
+          <a href="mailto:example@bk.ru">✉️ example@bk.ru</a>
+        </div>
+        <p class="footer-text">© 2024 Константин. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="./main.js"></script>
+</html>
